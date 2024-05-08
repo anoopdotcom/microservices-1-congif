@@ -1,13 +1,8 @@
 package com.Cart.CartService.Entity;
 
 import lombok.*;
-import org.springframework.data.annotation.Id;
-@Getter
-@Setter
+
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
-@Builder
 public class InventoryItemEntity {
 
     private String id;

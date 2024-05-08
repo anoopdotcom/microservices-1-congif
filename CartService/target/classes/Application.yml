@@ -1,9 +1,12 @@
 spring:
   application:
-    name: cart-service
+    name: CART-SERVICE
   data:
     mongodb:
       uri: mongodb://127.0.0.1:27017/cart?ssl=false
+  output:
+    ansi:
+      enabled: always
 server:
   port: 9099
 eureka:
@@ -12,4 +15,8 @@ eureka:
       serverUrl:
         defaultZone: http://localhost:8761/eureka/
 
-
+logging:
+  file:
+    name: ServiceLog.log
+  level:
+    root: INFO
